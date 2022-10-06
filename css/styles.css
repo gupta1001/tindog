@@ -22,7 +22,7 @@ p {
 }
 
 .container-fluid{
-   padding: 3% 5%; 
+   padding: 3% 15% 7%; 
 }
 
 body {
@@ -44,7 +44,7 @@ body {
     padding: 0 18px;
 }
 
-.nav-ling{
+.nav-link{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -57,14 +57,18 @@ body {
 
 /* title image */
 .title-image{
-    width: 60%;
+    width: 21%;
     transform: rotate(25deg);
+    position: absolute; 
+    right: 25%;
 }
 
 /* feature section */
 
 #features{
     padding:7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-col{
@@ -122,4 +126,42 @@ body {
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+/* Smaller screen responsiveness */
+@media (max-width: 1283px){
+    .title-image{
+        width: 60%;
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title{
+        text-align: center;
+    }
+}
+
+/* CTA section */
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* footer section */
+
+#footer{
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.social-icons{
+    margin: 20px 10px;
 }
